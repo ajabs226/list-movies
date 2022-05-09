@@ -1,0 +1,67 @@
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
+public class ListMovies {
+
+	//instance variables
+	public String title;
+	public String category;
+	
+	//getters and setters
+	public String getTitle() {
+		return title;
+	}
+	
+	public void setTitle() {
+		this.title = title;
+	}
+	
+	public String getGenre() {
+		return category;
+	}
+	
+	public void setGenre() {
+		this.category = category;
+	}
+
+	
+	//Constructors
+	public ListMovies(String title, String genre) {
+			this.title = title;
+			this.category = genre;
+	
+	}
+	
+	@Override
+	public String toString() {
+		return String.format(title, category);
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		
+		ArrayList<ListMovies> movieList = new ArrayList<>();
+		movieList.add(new ListMovies("A Quiet Place", "scifi"));
+		movieList.add(new ListMovies("Snowpiercer", "scifi"));
+		movieList.add(new ListMovies("Saw", "horror"));
+		movieList.add(new ListMovies("Texas Chainsaw Massacre", "horror"));
+		movieList.add(new ListMovies("The Graduate", "drama"));
+		movieList.add(new ListMovies("The Bridge On The River Kwai", "drama"));
+		movieList.add(new ListMovies("Snow White And The Seven Dwarfs", "animated"));
+		movieList.add(new ListMovies("Toy Story", "animated"));
+		movieList.add(new ListMovies("A Streetcar Named Desire", "drama"));
+		movieList.add(new ListMovies("A Clockwork Orange", "scifi"));
+		
+		System.out.println("Welcome to the Movie List Application!");
+		
+		System.out.println("\nThere are 10 movies in this list. \nWhat category are you interested in?");
+		System.out.println(movieList.toString());
+	
+		
+
+	}
+	
+
+
+}

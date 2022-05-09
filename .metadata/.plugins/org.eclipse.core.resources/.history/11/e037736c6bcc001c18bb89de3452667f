@@ -1,0 +1,14 @@
+
+public class ListMovies {
+
+	
+	
+	public static void main(String[] args) {
+		System.out.println("Welcome to the Movie List Application!");
+		
+		System.out.println(\n"There are 100 movies in this list. \nWhat category are you interested in?");
+	
+
+	}
+
+}
